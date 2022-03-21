@@ -1,0 +1,63 @@
+ body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: rgb(113, 121, 126);
+}
+
+.main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: large;
+}
+
+#display {
+    display: flex; 
+    flex-direction: row-reverse; 
+    align-items:center;
+    padding-right: 10px;
+    background-color: rgb(239,239,239);
+    height: 50px;
+    font-size: 22px;
+    overflow: visible;
+}
+button, #display {
+    border: solid 1px black;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.container #digit {
+    flex-grow: 3;
+}
+#operator {
+    background-color: rgb(115, 147, 179);
+}
+#operator:hover {
+    background-color: rgb(133, 170, 207);
+}
+#digit, #decimal {
+    background-color: rgb(105, 105, 105);
+}
+#digit:hover,#decimal:hover {
+    background-color: rgb(116, 115, 115);
+}
+#function {
+    background-color: rgb(138, 154, 91);
+}
+#function:hover {
+    background-color: rgb(161, 180, 105);
+}

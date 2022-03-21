@@ -1,0 +1,35 @@
+let obj = {
+  currentValue: undefined,
+  queue: [],
+
+  add(number) {
+    this.currentValue += number;
+    return
+  },
+
+  mulitply(number) {
+    if (number == '') {
+      return
+    }
+    this.currentValue *= number;
+    return
+  },
+
+  divide(number) {
+    this.currentValue /= number;
+    return
+  }
+}
+
+
+// Modifying first elements
+// The shift() method removes the first array element and "shifts" all other elements to a lower index.
+// Hopefully shift() can execute the first functions of queue
+//
+// The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+// Hopefully unshift() can add new functions to the beginning
+//
+//
+// Modifying Last elements
+// The push() method adds a new element to an array (at the end):
+// The pop() method returns the value that was "popped out":
